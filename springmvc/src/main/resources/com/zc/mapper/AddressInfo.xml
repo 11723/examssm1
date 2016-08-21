@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.zc.mapper.AddressInfoMapper">
+
+ <resultMap type="AddressInfo" id="addressmap">
+    <result property="address_id" column="address_id"/>
+    <result property="address" column="address"/>
+    <result property="address2" column="address2"/>
+    <result property="district" column="district"/>
+     <result property="city_id" column="city_id"/>
+      <result property="postal_code" column="postal_code"/>
+       <result property="phone" column="phone"/>
+       <result property="last_update" column="last_update"/>
+   </resultMap>
+
+   <select id="getAddressList"  resultMap="addressmap">
+   select * from address
+   </select>
+   
+   
+</mapper>

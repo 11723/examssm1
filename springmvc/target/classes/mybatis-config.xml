@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "mybatis-3-config.dtd" >
+<configuration>
+<typeAliases>
+		<typeAlias type="com.zc.po.UserInfo" alias="UserInfo"/>
+		<typeAlias type="com.zc.po.AddressInfo" alias="AddressInfo"/>
+</typeAliases>
+
+<mappers>
+<mapper resource="com/zc/mapper/UserInfo.xml"/>
+<mapper resource="com/zc/mapper/AddressInfo.xml"/>
+</mappers>
+
+</configuration>
